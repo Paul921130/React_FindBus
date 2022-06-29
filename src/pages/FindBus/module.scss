@@ -1,0 +1,45 @@
+$theme_bg: linear-gradient(138deg, rgba(7, 94, 155, 1) 58%, rgba(9, 54, 121, 1) 89%);
+
+.FindBus_Page {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 80px);
+    .stops_box {
+        width: 20%;
+        background: #ffffff;
+        overflow-y: scroll;
+        .stops_box_title {
+            text-align: left;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        /* width */
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            // box-shadow: inset 0 0 5px grey;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #ddd;
+        }
+    }
+    .map_box {
+        width: 80%;
+    }
+    .button {
+        position: absolute;
+        z-index: 9;
+        top: 10px;
+    }
+}
